@@ -3,7 +3,7 @@ import produtos from './produtosRoutes.js';
 
 const routes = (app) => {
     app.route('/').get((req, res) => res.status(200).send('Bem vindo a API'));
-    app.use(express.json(), produtos);
+    app.use(produtos);
 };
 
 export default routes;

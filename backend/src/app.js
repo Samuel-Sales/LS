@@ -14,12 +14,17 @@ conexao.once('open', () => {
 })
 
 const app = express();
-routes(app);
+
 app.use(cors({
   origin: 'https://ls-pink.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
+app.use(express.json());
+
+
+routes(app);
 
 
 export default app;
