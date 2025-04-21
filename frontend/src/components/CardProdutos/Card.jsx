@@ -1,9 +1,9 @@
 import imagemTeste from '../../assets/Goku.jpg';
 
-const Card = ({ nome, preco }) => {
+const Card = ({ nome, preco, imagem }) => {
   return (
     <div className="max-w-sm mx-auto border rounded-lg shadow-lg overflow-hidden">
-        <img className='w-full h-48 object-cover' src={imagemTeste} alt="Foto do Produto" />
+        <img className='w-full h-48 object-cover' src={imagem} alt="Foto do Produto" />
         <div className='p-4'>
             <h2 className='text-x1 font-semibold text-gray-800'>{nome}</h2>
             <h2 className='text-x1 font-semibold text-gray-800'>{preco}</h2>

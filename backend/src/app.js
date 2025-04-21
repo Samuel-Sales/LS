@@ -16,7 +16,7 @@ conexao.once('open', () => {
 const app = express();
 
 app.use(cors({
-  origin: ['https://ls-pink.vercel.app', 'http://localhost:3000'],
+  origin: ['https://ls-pink.vercel.app', 'http://localhost:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));

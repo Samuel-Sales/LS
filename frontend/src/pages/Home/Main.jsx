@@ -24,7 +24,7 @@ const Main = () => {
         <ul>
           {produtos.map((produto) => (
             <li key={produto._id}>
-              <Card nome={produto.nome} preco={produto.preco} />
+              <Card nome={produto.nome} preco={produto.preco} imagem={produto.imagem} />
             </li>
           ))}
         </ul>
